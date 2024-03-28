@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: "Gilda Display", serif;
+    font-size: 28px;
+    line-height: 1.45;
+    overflow-wrap: break-word;
+    background-color: beige;
+
+}
+:root{
+    --btn-background-color:#585858;
+    --bg-color:#FFFFFF;
+    
+    
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+.p-small{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.p-medium{
+    font-size: 15px;
+    letter-spacing: .05rem;
+}
+.btn-bg{
+    background-color: var(--btn-background-color);
+}
+
+.bg-color{
+    background-color: var(--category-background-color);
+}
+.product-sm-img{
+    width: 80px;
+
+}
