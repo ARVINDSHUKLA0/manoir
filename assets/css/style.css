@@ -51,19 +51,22 @@ a{
 .fs-70{
     font-size: 70px;
 }
-.owl-prev{
+.banner-wrapper .owl-prev{
     position: absolute;
     top: 50%;
     left: 0px;
     transform: translate(0px, -50%);
 
 }
-.owl-next{
+.banner-wrapper .owl-next{
     position: absolute;
     top: 50%;
     right: 0px;
     transform: translate(0px, -50%);
 }
-.owl-next span, .owl-prev span{
+.banner-wrapper .owl-next span, .banner-wrapper .owl-prev span{
     font-size: 60px;
+}
+.product-wrapper .owl-next span, .product-wrapper .owl-prev span{
+    font-size: 40px;
 }

@@ -7,8 +7,8 @@
     <title>home</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
@@ -18,8 +18,13 @@
     <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.5.1-web/css/all.min.css">
 
     <!-- owl carousel link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -43,36 +48,58 @@
         </div>
     </section> -->
     <section>
-        <div class="container-fluid">
-            
+        <div class="container-fluid banner-wrapper">
+
             <div class="position-relative">
-                
-            <div class="owl-carousel">
-                <div>
-                    <img src="./assets/img/slider1.jpeg" alt="" class="img-fluid">
+
+                <div class="owl-carousel">
+                    <div>
+                        <picture>
+
+                            <source media="(min-width: 768px)" srcset="./assets/img/slider1.jpeg">
+
+                            <source media="(max-width: 767px)" srcset="./assets/img/2.webp">
+
+                            <img src="./assets/img/slider1.jpeg" alt="Fallback Image">
+                        </picture>
+                    </div>
+                    <div>
+                        <picture>
+
+                            <source media="(min-width: 768px)" srcset="./assets/img/slider2.jpeg">
+
+                            <source media="(max-width: 767px)" srcset="./assets/img/8.webp">
+
+                            <img src="./assets/img/slider2.jpeg" alt="Fallback Image">
+                        </picture>
+                    </div>
+                    <div>
+                        <picture>
+
+                            <source media="(min-width: 768px)" srcset="./assets/img/slider3.jpeg">
+
+                            <source media="(max-width: 767px)" srcset="./assets/img/5.webp">
+
+                            <img src="./assets/img/slider3.jpeg" alt="Fallback Image">
+                        </picture>
+                    </div>
+
                 </div>
-                <div>
-                    <img src="./assets/img/slider2.jpeg" alt="" class="img-fluid">
+                <div class="position-absolute top-50 start-50 translate-middle z-index-2">
+                    <h1 class="text-center fs-70">Manoir </h1>
+                    <h3 class="text-center">Luxary Furnishing</h3>
                 </div>
-                <div>
-                    <img src="./assets/img/slider3.jpeg" alt="" class="img-fluid">
-                </div> 
-              </div>
-              <div class="position-absolute top-50 start-50 translate-middle z-index-2">
-                <h1 class="text-center fs-70">Manoir  </h1>
-                <h3 class="text-center">Luxary Furnishing</h3>
-            </div>
             </div>
 
         </div>
     </section>
-    
+
     <section>
         <div class="container-fluid mb-5">
             <a class="text-muted " href="#">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 "> 
-                        <img src="/assets/img/1.webp" alt="Image 1" class="img-fluid">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 ">
+                        <img src="./assets/img/1.webp" alt="Image 1" class="img-fluid">
                         <div>
                             <p class="text-uppercase p-small mt-3">seasonal sakura</p>
                             <h4 class="text-capitalize">japan</h4>
@@ -117,7 +144,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="product-wrapper">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col-lg-6 col-md-5 col-sm-12 col-12 m-auto mb-4">
@@ -127,8 +154,9 @@
                         spirit.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+
+            <div class="owl-carousel ">
+                <div>
                     <img src="./assets/img/13.webp" alt="Image" class="img-fluid">
                     <div class="pt-3 bg-white">
                         <p class="p-small text-uppercase">ski retreats</p>
@@ -138,26 +166,41 @@
                             </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+                <div>
                     <img src="./assets/img/14.webp" alt="Image" class="img-fluid">
                     <div class="pt-3 bg-white">
-                        <p class="p-small text-uppercase">Camps & safaris</p>
-                        <h5>Into the wilderness</h4>
+                        <p class="p-small text-uppercase">ski retreats</p>
+                        <h5>Last tracks</h4>
                             <div class="p-medium mx-4 pb-4 ">Endless opportunities for outdoor adventure await in the
                                 snow-blanketed mountains of Aman's two ski destinations in The French Alps and the USA.
                             </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+                <div>
                     <img src="./assets/img/15.webp" alt="Image" class="img-fluid">
                     <div class="pt-3 bg-white">
-                        <p class="p-small text-uppercase">beach</p>
-                        <h5>By the coast</h4>
+                        <p class="p-small text-uppercase">ski retreats</p>
+                        <h5>Last tracks</h4>
                             <div class="p-medium mx-4 pb-4 ">Endless opportunities for outdoor adventure await in the
                                 snow-blanketed mountains of Aman's two ski destinations in The French Alps and the USA.
                             </div>
                     </div>
                 </div>
+                <div>
+                    <img src="./assets/img/a.webp" alt="Image" class="img-fluid">
+                    <div class="pt-3 bg-white">
+                        <p class="p-small text-uppercase">ski retreats</p>
+                        <h5>Last tracks</h4>
+                            <div class="p-medium mx-4 pb-4 ">Endless opportunities for outdoor adventure await in the
+                                snow-blanketed mountains of Aman's two ski destinations in The French Alps and the USA.
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
                     <img src="./assets/img/b.webp" alt="Image" class="img-fluid">
                     <div class="pt-3 bg-white">
@@ -191,10 +234,10 @@
             </div>
         </div>
     </section>
-        
+
     <section>
         <div class="container-fluid">
-            
+
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-4 mt-5 ">
                     <img src="./assets/img/aa.webp" alt="" class="img-fluid w-100">
@@ -251,7 +294,7 @@
                     <img src="/" alt="this is images">
                     <ul>
                         <li><a href="#" class="text-muted p-medium">Textiles</a></li>
-                        <li> 
+                        <li>
                             <a href="#" class="text-muted p-medium">Bed</a>
                         </li>
                         <li>
@@ -373,7 +416,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-                            <p class="p-medium px-3">Copyright 2024, Aman Group S.a.r.l.</p> 
+                            <p class="p-medium px-3">Copyright 2024, Aman Group S.a.r.l.</p>
                         </div>
                     </div>
                 </div>
@@ -385,27 +428,42 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
         integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-        <script>
-            $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-    items: 1,
-    loop:true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    smartSpeed: 1000,
-    nav:true
+    <script>
+        $(document).ready(function () {
+            $(".banner-wrapper .owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                smartSpeed: 1000,
+                nav: true
 
-  });
-});
-        </script>
+            });
+            $(".product-wrapper .owl-carousel").owlCarousel({
+                items: 3,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                smartSpeed: 1000,
+                nav: true,
+                margin: 15
+
+            });
+        });
+    </script>
 </body>
 
 </html>
