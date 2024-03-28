@@ -9,7 +9,7 @@ body{
     font-size: 28px;
     line-height: 1.45;
     overflow-wrap: break-word;
-    background-color: beige;
+    background-color: #F3EEE7;
 
 }
 :root{
@@ -24,6 +24,9 @@ ul{
 }
 a{
     text-decoration: none;
+}
+.z-index-2{
+    z-index: 2;
 }
 .p-small{
     font-size: 20px;
@@ -44,4 +47,23 @@ a{
 .product-sm-img{
     width: 80px;
 
+}
+.fs-70{
+    font-size: 70px;
+}
+.owl-prev{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(0px, -50%);
+
+}
+.owl-next{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translate(0px, -50%);
+}
+.owl-next span, .owl-prev span{
+    font-size: 60px;
 }
