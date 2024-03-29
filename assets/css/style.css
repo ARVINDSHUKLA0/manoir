@@ -77,10 +77,27 @@ a{
 .fs-70{
     font-size: 70px;
 }
+@media (max-width: 767px){
+    .fs-sm-14{
+        font-size: 14px;
+    }
+    .fs-sm-15{
+        font-size: 15px;
+    }
+    .fs-sm-16{
+        font-size: 16px;
+    }
+}
+
 
 .no-focus:focus{
     outline: none !important;
 }
+
+
+
+
+
 /* navbar css start  */
 .logo-img{
     width: 180px;
@@ -153,14 +170,23 @@ a{
     min-width: 50%;
 
 }
-.sidebar-right-side-wrapper{
-    /* background-color: aqua; */
-    /* height: 100vh; */
+.sidebar-right2-side-wrapper{
+    display: none;
 }
 @media (max-width: 768px){
     .sidebar{
         width: 95%; 
      }
+     .sidebar-list{ 
+        padding-right: 20px;
+    }
+    .sidebar-dropdown-wrap{  
+        padding: 0px 20px;
+    }
+    .sidebar-list-wrapper{
+        width: 100%;
+        overflow: auto;
+    }
 }
 
 
