@@ -25,10 +25,15 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav class="py-2 shadow-sm">
+    <!-- <nav class="py-2 shadow-sm">
         <div class="container">
             <div class="d-flex gap-3">
                 <a href="./index.html">home</a>
@@ -38,15 +43,181 @@
                 <a href="./contact-us.html">contact us</a>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
-    <!-- <section>
-        <div class="container-fluid mb-3">
-            <video class="w-100" controls autoplay muted>
-                <source src="./assets/viedo/h-video.mp4" type="video/mp4">
-            </video>
+    <nav class="py-3">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <div class="d-flex align-items-center gap-2">
+                        <button class="btn btn-lg" onclick="openSidebar()">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <p class="mb-0 fs-16 d-md-block d-none">Menu</p>
+                        <button class="btn btn-lg d-lg-block d-none" onclick="openSearchSidebar()">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <img src="./assets/img/logo.png" alt="" class="logo-img">
+                </div>
+                <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-end gap-4">
+
+
+                        <select name="language" id=""
+                            class="bg-transparent border-0 border-bottom border-bottom-1 border-dark fs-16 d-md-block d-none">
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                        </select>
+                        <button class="btn rounded-0 border border-dark px-4 py-1 d-lg-block d-none">Reserve</button>
+                        <button class="btn btn-lg d-lg-none d-block" onclick="openSearchSidebar()">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-    </section> -->
+    </nav>
+    <section id="searchsidebar" class="searchsidebar bg-white position-fixed top-0  p-md-4 p-2 z-index-3 shadow">
+        <div class="text-end">
+            <button class="btn" onclick="closeSearchSidebar()"><i class="fa-solid fa-xmark fa-xl"></i></button>
+        </div>
+        <div>
+            <form action="" class="mb-2">
+                <p class="fs-16 mb-1">Search</p>
+                <input type="text" name="" id="" placeholder="Enter Search Item"
+                    class="d-block w-100 border-0 border-bottom border-bottom-1 border-dark no-focus">
+            </form>
+            <div class="text-end">
+                <button class="bg-dark text-white py-1 px-4 border-0">Search</button>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+
+        </div>
+    </section>
+    <section id="sidebar" class="sidebar bg-white position-fixed  top-0  p-md-5 p-2 z-index-3 shadow shadow-lg">
+        <div class="sidebar-inner-wrapper position-relative d-flex flex-wrap">
+
+            <div class="d-flex align-items-center justify-content-between mb-5 position-absolute w-100 top-0 ">
+                <div>
+                    <img src="./assets/img/logo.png" alt="manoir" width="100">
+                </div>
+
+                <button class="btn" onclick="closeSidebar()"><i class="fa-solid fa-xmark fa-xl"></i></button>
+            </div>
+
+            <div class="sidebar-list-wrapper">
+                <ul class="sidebar-list border-secondary">
+                    <li class="mb-2">
+                        <button
+                            class="sidebar-list-link d-flex align-items-cnter justify-content-between w-100 border-0 bg-transparent gap-3 fs-20 "><span>TEXTILES</span><span><i
+                                    class="fa-solid fa-angle-right fs-16"></i></span></button>
+                        <div class="position-absolute top-0 start-100 sidebar-dropdown-wrap ">
+                            <ul>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="mb-2">
+                        <button
+                            class="sidebar-list-link d-flex align-items-cnter justify-content-between w-100 border-0 bg-transparent gap-3 fs-20 "><span>BED</span><span><i
+                                    class="fa-solid fa-angle-right fs-16"></i></span></button>
+                        <div class="position-absolute top-0 start-100 sidebar-dropdown-wrap ">
+                            <ul>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="mb-2">
+                        <button
+                            class="sidebar-list-link d-flex align-items-cnter justify-content-between w-100 border-0 bg-transparent gap-4 fs-20 "><span>BATHWARE
+                                ASSORTMENT</span><span><i class="fa-solid fa-angle-right fs-16"></i></span></button>
+                        <div class="position-absolute top-0 start-100 sidebar-dropdown-wrap ">
+                            <ul>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                                <li class="pb-2"><a href="#" class="fs-20 text-dark">Table linens</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-muted fs-20 ">Bedroom</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-muted fs-20 ">Living Lounge</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-muted fs-20 ">Office Space</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-muted fs-20 ">Entertainment Area</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-muted fs-20 ">KIDS ROOM</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="sidebar-right-side-wrapper flex-grow-1 ">
+            <div class="border rounded p-4 shadow w-100">
+                <div>
+                    <h2 class="text-center"> Contact With Us</h2>
+                </div>
+                <form action="">
+                    <div class="mb-4">
+                        <p class="mb-1">Name</p>
+                        <input type="text" name="" id="" placeholder="Enter Your Full Name"
+                            class="d-block w-100 border-0 border-bottom border-bottom-1 border-secondary no-focus border-secondary-subtle">
+                    </div>
+                    <div class="mb-4">
+                        <p class="mb-1">Email</p>
+                        <input type="text" name="" id="" placeholder="Enter Your Email"
+                            class="d-block w-100 border-0 border-bottom border-bottom-1 border-secondary no-focus border-secondary-subtle">
+                    </div>
+                    <div class="mb-5">
+                        <p class="mb-1">Phone</p>
+                        <input type="text" name="" id="" placeholder="Enter Your Mobile Number"
+                            class="d-block w-100 border-0 border-bottom border-bottom-1 border-secondary no-focus border-secondary-subtle">
+                    </div>
+                    <div>
+                        <button class="text-center btn form-control btn-secondary">Click</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+
+    </section>
+
+
     <section>
         <div class="container-fluid banner-wrapper">
 
@@ -196,11 +367,11 @@
                             </div>
                     </div>
                 </div>
-                
+
             </div>
 
             <div class="row">
-                
+
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
                     <img src="./assets/img/b.webp" alt="Image" class="img-fluid">
                     <div class="pt-3 bg-white">
@@ -437,6 +608,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
     <script>
@@ -462,7 +636,39 @@
                 margin: 15
 
             });
+
+            $('.sidebar-list-link').click(function () {
+                $(this).siblings().show()
+                $(this).parent().siblings('li').children('.sidebar-dropdown-wrap').hide()
+                $('.sidebar-right-side-wrapper').hide()
+                $(this).css('color', 'black')
+                $(this).parent().siblings('li').children('.sidebar-list-link').css('color', '#35373bbf')
+                $(this).parent().parent().css('border-right', '1px solid')
+            })
+
+
+
         });
+
+        function openSearchSidebar() {
+            let searchsidesection = document.getElementById('searchsidebar')
+            searchsidesection.style.left = '0%'
+        }
+        function closeSearchSidebar() {
+            let searchsidesection = document.getElementById('searchsidebar')
+            searchsidesection.style.left = '-100%'
+        }
+        function openSidebar() {
+            let searchsidesection = document.getElementById('sidebar')
+            searchsidesection.style.left = '0%'
+        }
+        function closeSidebar() {
+            let searchsidesection = document.getElementById('sidebar')
+            searchsidesection.style.left = '-100%'
+        }
+
+
+
     </script>
 </body>
 

@@ -6,11 +6,10 @@
 }
 body{
     font-family: "Gilda Display", serif;
-    font-size: 28px;
+    /* font-size: 28px; */
     line-height: 1.45;
     overflow-wrap: break-word;
     background-color: #F3EEE7;
-
 }
 :root{
     --btn-background-color:#585858;
@@ -27,6 +26,9 @@ a{
 }
 .z-index-2{
     z-index: 2;
+}
+.z-index-3{
+    z-index: 3;
 }
 .p-small{
     font-size: 20px;
@@ -48,15 +50,53 @@ a{
     width: 80px;
 
 }
+.fs-10{
+    font-size: 10px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-22{
+    font-size: 22px;
+}
+.fs-24{
+    font-size: 24px;
+}
 .fs-70{
     font-size: 70px;
 }
+
+.no-focus:focus{
+    outline: none !important;
+}
+/* navbar css start  */
+.logo-img{
+    width: 180px;
+}
+@media (max-width: 576px){
+    .logo-img{
+        width: 100%;
+    }
+}
+
+/* banner css start  */
 .banner-wrapper .owl-prev{
     position: absolute;
     top: 50%;
     left: 0px;
     transform: translate(0px, -50%);
-
 }
 .banner-wrapper .owl-next{
     position: absolute;
@@ -70,3 +110,58 @@ a{
 .product-wrapper .owl-next span, .product-wrapper .owl-prev span{
     font-size: 40px;
 }
+
+
+/* searchsidebar css start  */
+.searchsidebar{
+   width: 50%;
+   left: -100%;
+   transition: .3s;
+   height: 100vh;
+   overflow: auto;
+}
+@media (max-width: 768px){
+    .searchsidebar{
+        width: 95%; 
+     }
+}
+/* sidebar css start  */
+.sidebar{
+   width: 90%;
+   left: 0%;
+   transition: .3s;
+   height: 100vh;
+   overflow: auto;
+}
+.sidebar-list{
+    position: relative;
+    width: max-content;
+    padding-right: 70px;
+}
+.sidebar-list-link{
+    color: #35373bbf;
+}
+.sidebar-dropdown-wrap{ 
+    display: none;
+    width: max-content;
+    padding: 0px 70px;
+}
+.sidebar-inner-wrapper{
+    padding-top: 100px;
+}
+.sidebar-list-wrapper{
+    min-width: 50%;
+
+}
+.sidebar-right-side-wrapper{
+    /* background-color: aqua; */
+    /* height: 100vh; */
+}
+@media (max-width: 768px){
+    .sidebar{
+        width: 95%; 
+     }
+}
+
+
+
