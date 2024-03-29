@@ -145,7 +145,7 @@ a{
 /* sidebar css start  */
 .sidebar{
    width: 90%;
-   left: 0%;
+   left: -100%;
    transition: .3s;
    height: 100vh;
    overflow: auto;
