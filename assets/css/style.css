@@ -224,7 +224,7 @@ li{
     margin: auto;
     padding: 32px 0px;
     transition: .5s;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
 }
 .nav-style{
     backdrop-filter: blur(14px);
@@ -270,14 +270,14 @@ video {
 .box1{
     height: 100vh;
     width: 100%;
-    background-image: url('../img/section2.jpg');
+    background-image: url('../img/manoir-section-2.webp');
     background-size: cover;
     position: relative;
 }
 .img-kk{
     height: 100vh;
     width: 100%;
-    background-image: url('../img/section3.webp');
+    background-image: url('../img/manoir-section-3.webp');
     background-size: cover;
     position: relative;
 }
@@ -370,6 +370,9 @@ position: relative;
 }
 
 
+.ls-10{
+    letter-spacing: 10px;
+}
 
 .scroll-tab button span{
     background-color: white;
