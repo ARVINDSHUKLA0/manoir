@@ -1,0 +1,25 @@
+ .categoryMani-Images{
+    height: 400px;
+    width: 100%;
+ }
+ .categoryMani-Images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+ }
+ .custom-font-size-category{
+    font-size: 40px !important;
+    line-height: 40px;
+    font-weight: 300;
+ }
+ .mt-100{ 
+    padding-top: 50px;
+ }
+
+ @media (min-width: 0px) and (max-width: 525px) {
+    .categoryMani-Images{
+    height: 250px;
+    width: 100%;
+ }
+}

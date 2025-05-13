@@ -45,6 +45,11 @@ import ProductsPage from './Component/User/ProductsPage';
 import ProductsCategory from './Component/User/ProductsCategory';
 import ProductsCharacter from './Component/User/ProductsCharacter';
 import { ratingdata } from './redux/slice/rating';
+import Category from './Component/User/Category';
+import CategoryView from './Component/User/CategoryView';
+import { AddtocartCompoents } from './ContextApi/AddtocartCompoents';
+ 
+ 
 
 function App() {
   const dispatch = useDispatch()
@@ -77,10 +82,12 @@ function App() {
   }, [userData])
   return (
     <>
+    <AddtocartCompoents>
       <BrowserRouter>
-      <ScrollToTop/> 
+      <ScrollToTop/>  
       <Routes>
       <Route path="/" element={<PrivateComponenet/>} >
+        
         <Route index element={<Index/>} /> 
         <Route path="cart" element={<Cart/>} />  
         <Route path="profile" element={<Profile/>} />
@@ -89,6 +96,8 @@ function App() {
         <Route path="products/category/:category" element={<ProductsCategory/>} />
         {/* <Route path="products/character/:character" element={<ProductsCharacter/>} /> */}
         <Route path="products" element={<ProductsPage/>} />  
+        <Route path='/category' element={<Category/>}/>
+        <Route path='/categoryView/:id' element={<CategoryView/>}/>
 
 
       </Route> 
@@ -105,6 +114,7 @@ function App() {
       <Route path="/user-verification-check/:id" element={<VerifactionCheck/>} /> 
       </Routes>  
       </BrowserRouter>
+      </AddtocartCompoents>
     </>
   )
 }
