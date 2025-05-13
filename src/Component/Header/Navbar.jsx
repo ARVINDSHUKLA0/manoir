@@ -125,10 +125,10 @@ const Navbar = (props) => {
                                 <button className="btn btn-lg" onClick={openSidebar}>
                                     <i className="fa-solid fa-bars"></i>
                                 </button>
-                                <p className="mb-0 fs-16 d-md-block d-none">Menu</p>
+                                {/* <p className="mb-0 fs-16 d-md-block d-none">Menu</p>
                                 <button className="btn btn-lg d-lg-block d-none" onClick={openSearchSidebar}>
                                     <i className="fa-solid fa-magnifying-glass"></i>
-                                </button>
+                                </button> */}
                             </div>
                         </div>
                         <div className="col-4 text-center">
@@ -159,6 +159,7 @@ const Navbar = (props) => {
                 <div className="text-end">
                     <button className="btn" onClick={openSearchSidebar}><i className="fa-solid fa-xmark fa-xl"></i></button>
                 </div>
+                {/*  
                 <div>
                     <form action="" className="mb-2">
                         <p className="fs-16 mb-1">Search</p>
@@ -172,6 +173,7 @@ const Navbar = (props) => {
                 <div className="d-flex align-items-center justify-content-between">
 
                 </div>
+                */}
             </section>
 
             {/* <section id="sidebar" className="sidebar bg-white position-fixed  top-0  p-md-5 p-2 z-index-3 shadow shadow-lg" style={{ left: `${sidebarOpen ? '0%' : "-100%"}` }}>
